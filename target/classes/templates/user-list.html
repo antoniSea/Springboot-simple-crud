@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+</head>
+<body>
+<h1>User List</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    <!-- Loop through the list of users and create a table row for each user -->
+    <th:block th:each="user : ${users}">
+        <tr>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.email}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
